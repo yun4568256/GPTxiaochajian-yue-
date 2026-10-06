@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <TargetPlatformMoniker>Windows,Version=7.0</TargetPlatformMoniker>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>CaapiUsageOverlay</AssemblyName>
+    <RootNamespace>CaapiUsageOverlay</RootNamespace>
+    <ApplicationIcon>mascot.ico</ApplicationIcon>
+    <DebugType Condition="'$(Configuration)' == 'Release'">none</DebugType>
+    <DebugSymbols Condition="'$(Configuration)' == 'Release'">false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="query_account.py" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="mascot.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="query_usage.py" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="click.wav" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
